@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<h2>删除用户</h2>
+		<!--
+		form用于表单提交
+		mothod设置请求的方法
+		action设置请求的url
+		name用于接收用户输入的数据
+		-->
+		<form method="get" action="/user/delete"><!--一定要和//把路由器挂载到服务器下，添加前缀  /user保持一致-->
+		编号：<input type="text" name ="id"  style="background-color: #e9edff;"><br>
+		<input type="submit" value="删除" style="background-color: #aaaa00;">
+		</form>
+	</body>
+</html>

@@ -1,0 +1,3 @@
+//忽略文件的
+error.txt
+node_modules/

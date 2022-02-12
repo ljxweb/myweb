@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<h2>信息修改</h2>
+		<!--
+		form用于表单提交
+		mothod设置请求的方法
+		action设置请求的url
+		name用于接收用户输入的数据
+		-->
+		<form method="post" action="/user/update"><!--一定要和//把路由器挂载到服务器下，添加前缀  /user保持一致-->
+		编号：<input type="text" name ="id"  style="background-color: #e9edff;"><br>
+		密码：<input type="text" name ="upwd"  style="background-color: #e9edff;"><br>
+		邮箱：<input type="text" name ="email"  style="background-color: #e9edff;"><br>
+		<input type="submit" value="提交修改" style="background-color: #5500ff;">
+		</form>
+	</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<h2>商品列表</h2>
+		<!--
+		form用于表单提交
+		mothod设置请求的方法
+		action设置请求的url
+		name用于接收用户输入的数据
+		-->
+		<form method="get" action="/product/list"><!--一定要和//把路由器挂载到服务器下，添加前缀  /user保持一致-->
+		当前页码：<input type="text" name ="pno"  style="background-color: #e9edff;"><br>
+		每页大小：<input type="text" name ="count"  style="background-color: #e9edff;"><br>
+		<input type="submit" value="提交" style="background-color: #5500ff;">
+		</form>
+	</body>
+</html>

@@ -1,0 +1,35 @@
+SET NAMES UTF8;
+
+DROP DATABASE IF EXISTS `xz`;
+CREATE DATABASE `xz` DEFAULT CHARACTER SET UTF8;
+USE `xz`;
+-- 创建用户表
+CREATE TABLE `user`(
+    `id` INT KEY AUTO_INCREMENT,
+    `uname` VARCHAR(40),
+    `upwd` VARCHAR(40),
+    `age` TINYINT(3)
+)DEFAULT CHARACTER SET UTF8;
+
+-- 创建商品表
+CREATE TABLE `product`(
+    `id` INT KEY AUTO_INCREMENT,
+    `pname` VARCHAR(40),
+    `title` VARCHAR(40),
+    `price` VARCHAR(40)
+)DEFAULT CHARACTER SET UTF8;
+
+INSERT INTO `user` VALUES(NULL,'shenge',123456,18);
+INSERT INTO `user` VALUES(NULL,'dingding',123456,18);
+INSERT INTO `user` VALUES(NULL,'dangdang',123456,28);
+INSERT INTO `user` VALUES(NULL,'xiaoyi',123456,19);
+INSERT INTO `user` VALUES(NULL,'xiaoyu',123456,38);
+INSERT INTO `user` VALUES(NULL,'jone',123456,38);
+INSERT INTO `user` VALUES(NULL,'tom',123456,36);
+INSERT INTO `user` VALUES(NULL,'lucy',123456,35);
+INSERT INTO `user` VALUES(NULL,'peter',123456,48);
+
+INSERT INTO `product` VALUES(NULL,'三星W2022','三星 SAMSUNG 心系天下W22 5G 折叠屏 骁龙888 5G手机 16＋512GB雅瓷黑',23999);
+INSERT INTO `product` VALUES(NULL,'小米11','小米11 5G 骁龙888 2K AMOLED四曲面柔性屏 游戏手机 8G+128GB 白色',3799);
+INSERT INTO `product` VALUES(NULL,'vivo','vivo X60 5G手机 5nm旗舰芯片蔡司光学镜头vivox60手机 微光 8GB+256GB',2799);
+INSERT INTO `product` VALUES(NULL,'华为','华为 Mate40 5G 手机【支持鸿蒙HarmonyOs】 亮黑色 mate40E(8+128G)',4959);

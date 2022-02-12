@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<h2>用户登录</h2>
+		<!--
+		form用于表单提交
+		mothod设置请求的方法
+		action设置请求的url
+		name用于接收用户输入的数据
+		-->
+		<form method="post" action="/user/login"><!--一定要和//把路由器挂载到服务器下，添加前缀  /user保持一致-->
+		账号：<input type="text" name ="uname"  style="background-color: #ffffe5;"><br>
+		密码：<input type="text" name="upwd" style="background-color: #ffffe5;"><br>
+		<input type="submit" value="登录" style="background-color: #00aaff;">
+		</form>
+	</body>
+</html>
